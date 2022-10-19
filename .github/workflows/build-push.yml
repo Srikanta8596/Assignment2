@@ -7,7 +7,7 @@ on:
      -published
 
 
-Jobs:
+jobs:
  
  
  build:
@@ -42,6 +42,7 @@ Jobs:
      - name: build image
        uses: docker/build-push-action@v2
        with:
+          push: true
           tags: ${{ steps.docker_meta.outputs.tags }}
           file: ./Dockerfile
        
