@@ -22,7 +22,7 @@ Jobs:
        id: docker_meta
        uses: crazy-max/ghaction-docker-meta@v1
        with: 
-         images: ghcr.io/Srikanta8596/demo-auto
+         images: ghcr.io/Srikanta8596/app
          tag-sha: true
          tag-edge: false
          tag-latest: true
